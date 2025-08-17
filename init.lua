@@ -718,6 +718,17 @@ require('lazy').setup({
           },
         },
         terraformls = {},
+        yamlls = {
+          settings = {
+            yaml = {
+              completion = true,
+              hover = true,
+              schemas = {
+                ['https://json.schemastore.org/github-workflow.json'] = '/.github/workflows/*',
+              },
+            },
+          },
+        },
       }
 
       -- Ensure the servers and tools above are installed
