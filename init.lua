@@ -117,6 +117,14 @@ vim.o.showmode = false
 vim.schedule(function()
   vim.o.clipboard = 'unnamedplus'
   local osc52 = require 'vim.ui.clipboard.osc52'
+
+  local function paste()
+    return {
+      vim.fn.split(vim.fn.getreg '', '\n'),
+      vim.fn.getregtype '',
+    }
+  end
+
   vim.g.clipboard = {
     name = 'OSC 52',
     copy = {
@@ -124,8 +132,8 @@ vim.schedule(function()
       ['*'] = osc52.copy '*',
     },
     paste = {
-      ['+'] = osc52.paste '+',
-      ['*'] = osc52.paste '*',
+      ['+'] = paste,
+      ['*'] = paste,
     },
   }
 end)
