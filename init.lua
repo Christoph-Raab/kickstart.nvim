@@ -727,6 +727,7 @@ require('lazy').setup({
         },
         terraformls = {},
         tflint = {},
+        helm_ls = {},
         yamlls = {
           settings = {
             yaml = {
