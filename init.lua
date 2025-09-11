@@ -735,6 +735,7 @@ require('lazy').setup({
               hover = true,
               schemas = {
                 ['https://json.schemastore.org/github-workflow.json'] = '/.github/workflows/*',
+                ['http://json.schemastore.org/github-action'] = '.github/action/*',
               },
             },
           },
