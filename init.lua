@@ -737,6 +737,7 @@ require('lazy').setup({
               schemas = {
                 ['https://json.schemastore.org/github-workflow.json'] = '/.github/workflows/*',
                 ['http://json.schemastore.org/github-action'] = '.github/action/*',
+                ['http://json.schemastore.org/chart'] = 'Chart.{yml,yaml}',
               },
             },
           },
