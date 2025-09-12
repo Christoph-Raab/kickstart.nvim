@@ -725,6 +725,7 @@ require('lazy').setup({
             },
           },
         },
+        bashls = {},
         terraformls = {},
         tflint = {},
         helm_ls = {},
