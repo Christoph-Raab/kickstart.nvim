@@ -14,5 +14,6 @@ map({ 'n', 'i' }, '<C-t>', function()
     vim.notify('Multiple tabs open, not closing automatically', vim.log.levels.WARN)
   end
 end, { noremap = true, desc = '[f]ullscreen current buffer' })
+map('n', '<leader>hn', '<cmd>wall<cr><cmd>Neogit<cr>', { desc = 'Open Neogit floating', silent = true })
 
 return M
