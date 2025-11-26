@@ -15,29 +15,4 @@ map({ 'n', 'i' }, '<C-t>', function()
 end, { noremap = true, desc = '[f]ullscreen current buffer' })
 map('n', '<leader>hn', '<cmd>wall<cr><cmd>Neogit<cr>', { desc = 'Open Neogit floating', silent = true })
 
-local harpoon = require 'harpoon'
-harpoon:setup()
-
-map('n', '<leader>a', function()
-  harpoon:list():add()
-end)
-map('n', '<C-e>', function()
-  harpoon.ui:toggle_quick_menu(harpoon:list())
-end)
-harpoon:extend {
-  UI_CREATE = function(cx)
-    vim.keymap.set('n', '<C-v>', function()
-      harpoon.ui:select_menu_item { vsplit = true }
-    end, { buffer = cx.bufnr })
-
-    vim.keymap.set('n', '<C-x>', function()
-      harpoon.ui:select_menu_item { split = true }
-    end, { buffer = cx.bufnr })
-
-    vim.keymap.set('n', '<C-t>', function()
-      harpoon.ui:select_menu_item { tabedit = true }
-    end, { buffer = cx.bufnr })
-  end,
-}
-
 return M
