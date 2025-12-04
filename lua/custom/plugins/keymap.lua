@@ -14,5 +14,11 @@ map({ 'n', 'i' }, '<C-t>', function()
   end
 end, { noremap = true, desc = '[f]ullscreen current buffer' })
 map('n', '<leader>hn', '<cmd>wall<cr><cmd>Neogit<cr>', { desc = 'Open Neogit floating', silent = true })
+map('n', '<leader>yd', function()
+  -- vim.fn.setreg('+', vim.fn.expand '%:p:h')
+  local dir = vim.fn.expand '%:p:h'
+  vim.fn.setreg('+', dir)
+  print('Copied directory: ' .. dir)
+end, { desc = 'Yank dir of current file' })
 
 return M
