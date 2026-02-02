@@ -733,8 +733,8 @@ require('lazy').setup({
           },
         },
         pylsp = {},
-        terraformls = {},
-        tflint = {},
+        tofu_ls = {},
+        -- tflint = {}, -- doesn't work with all opentofu features, no linter for opentofu yet
         yamlls = {
           settings = {
             yaml = {
