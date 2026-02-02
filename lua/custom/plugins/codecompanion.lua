@@ -3,7 +3,6 @@ return {
     'olimorris/codecompanion.nvim',
     dependencies = {
       'nvim-lua/plenary.nvim',
-      'nvim-treesitter/nvim-treesitter',
       'j-hui/fidget.nvim',
     },
     -- Required for lazy loading commands
