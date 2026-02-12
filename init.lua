@@ -623,6 +623,8 @@ require('lazy').setup({
           },
         },
         pylsp = {},
+        tofu_ls = {},
+        -- tflint = {}, -- doesn't work with all opentofu features, no linter for opentofu yet
       }
 
       -- Ensure the servers and tools above are installed
