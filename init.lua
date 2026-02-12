@@ -625,6 +625,19 @@ require('lazy').setup({
         pylsp = {},
         tofu_ls = {},
         -- tflint = {}, -- doesn't work with all opentofu features, no linter for opentofu yet
+        yamlls = {
+          settings = {
+            yaml = {
+              completion = true,
+              hover = true,
+              schemas = {
+                ['https://json.schemastore.org/github-workflow.json'] = '/.github/workflows/*',
+                ['http://json.schemastore.org/github-action'] = '.github/action/*',
+                ['http://json.schemastore.org/chart'] = 'Chart.{yml,yaml}',
+              },
+            },
+          },
+        },
       }
 
       -- Ensure the servers and tools above are installed
