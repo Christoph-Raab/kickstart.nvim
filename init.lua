@@ -607,7 +607,15 @@ require('lazy').setup({
         bashls = {},
         docker_language_server = {},
         gh_actions_ls = {},
-        helm_ls = {},
+        helm_ls = {
+          settings = {
+            ['helm-ls'] = {
+              yamlls = {
+                path = 'yaml-schema-router',
+              },
+            },
+          },
+        },
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
@@ -626,6 +634,7 @@ require('lazy').setup({
         tofu_ls = {},
         -- tflint = {}, -- doesn't work with all opentofu features, no linter for opentofu yet
         yamlls = {
+          cmd = { 'yaml-schema-router' },
           settings = {
             yaml = {
               completion = true,
