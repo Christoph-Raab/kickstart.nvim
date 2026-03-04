@@ -17,14 +17,14 @@ return {
         chat = {
           adapter = {
             name = 'copilot',
-            model = 'gpt-5.2',
+            model = 'claude-sonnet-4.6',
           },
           roles = { user = 'Chris' },
         },
         inline = {
           adapter = {
             name = 'copilot',
-            model = 'gpt-5.2',
+            model = 'claude-haiku-4.5',
           },
         },
       },
