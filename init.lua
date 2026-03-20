@@ -733,6 +733,37 @@ do
         },
       },
     },
+
+    -- cr: my lsp servers:
+    bashls = {},
+    docker_language_server = {},
+    gh_actions_ls = {},
+    helm_ls = {
+      settings = {
+        ['helm-ls'] = {
+          yamlls = {
+            path = 'yaml-schema-router',
+          },
+        },
+      },
+    },
+    pylsp = {},
+    tofu_ls = {},
+    -- tflint = {}, -- doesn't work with all opentofu features, no linter for opentofu yet
+    yamlls = {
+      cmd = { 'yaml-schema-router' },
+      settings = {
+        yaml = {
+          completion = true,
+          hover = true,
+          schemas = {
+            ['https://json.schemastore.org/github-workflow.json'] = '/.github/workflows/*',
+            ['http://json.schemastore.org/github-action'] = '.github/action/*',
+            ['http://json.schemastore.org/chart'] = 'Chart.{yml,yaml}',
+          },
+        },
+      },
+    },
   }
 
   vim.pack.add {
