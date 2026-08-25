@@ -18,6 +18,10 @@
       "rev": "18aeab3d63d350dcf44d64c462cc489a3412af40",
       "src": "ssh://git@github.com/stevearc/conform.nvim"
     },
+    "diffbandit.nvim": {
+      "rev": "207ef5718edb74161897eafb1cbe6f7832cda28b",
+      "src": "https://github.com/CoreyKaylor/diffbandit.nvim"
+    },
     "diffview.nvim": {
       "rev": "4516612fe98ff56ae0415a259ff6361a89419b0a",
       "src": "ssh://git@github.com/sindrets/diffview.nvim"
