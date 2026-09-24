@@ -27,7 +27,7 @@ local live_multigrep = function(opts)
       ---@diagnostic disable-next-line: deprecated
       return vim.iter({
         args,
-        { '--color=never', '--no-heading', '--with-filename', '--line-number', '--column', '--smart-case', '--hidden', '--glob', '!**/.git/*' },
+        { '--color=never', '--no-heading', '--with-filename', '--line-number', '--column', '--smart-case', '--hidden', '--glob', '!**/.git/*', '--glob', '!**/graphify-out/*' },
       }):flatten():totable()
     end,
     entry_maker = make_entry.gen_from_vimgrep(opts),
