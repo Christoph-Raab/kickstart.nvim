@@ -497,7 +497,7 @@ do
       -- https://stackoverflow.com/questions/71809098/how-to-include-specific-hidden-file-folder-in-search-result-when-using-telescope
       find_files = {
         hidden = true,
-        find_command = {"rg", "--files", "--hidden", "--glob", "!**/.git/*"}
+        find_command = {"rg", "--files", "--hidden", "--glob", "!**/.git/*", "--glob", "!**/graphify-out/*"}
       },
     },
     extensions = {
