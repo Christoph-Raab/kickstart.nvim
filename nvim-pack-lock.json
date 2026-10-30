@@ -123,10 +123,6 @@
       "rev": "427b576c16792edad01a92b89721d923c19ad60f",
       "src": "https://github.com/nvim-telescope/telescope.nvim"
     },
-    "tf-docs.nvim": {
-      "rev": "513c565ef24d9d2e6399e61815e67554cf2e2f0b",
-      "src": "https://github.com/cablecreek/tf-docs.nvim"
-    },
     "todo-comments.nvim": {
       "rev": "31e3c38ce9b29781e4422fc0322eb0a21f4e8668",
       "src": "https://github.com/folke/todo-comments.nvim"
